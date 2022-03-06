@@ -1,0 +1,6 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Powders") do |sheet|
+  @powders.each do |powder|
+    sheet.add_row [powder.name, powder.pinyin, powder.price_retail, powder.location, powder.qty]
+  end
+end
