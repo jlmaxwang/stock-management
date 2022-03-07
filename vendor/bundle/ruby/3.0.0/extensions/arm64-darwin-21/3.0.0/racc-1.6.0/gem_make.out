@@ -1,0 +1,17 @@
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+/Users/jiluwang/.rbenv/versions/3.0.3/bin/ruby -I /Users/jiluwang/.rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220307-53414-u6z7sl.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20220307-53414-euo3c2/racc

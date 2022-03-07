@@ -1,0 +1,15 @@
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+/Users/jiluwang/.rbenv/versions/3.0.3/bin/ruby -I /Users/jiluwang/.rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220307-53414-an6w4b.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/jiluwang/code/jlmaxwang/stock-management/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220307-53414-7pjjij/bootsnap
