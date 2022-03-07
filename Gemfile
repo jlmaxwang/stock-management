@@ -54,3 +54,4 @@ gem "roo", "~> 2.8"
 # gem 'axlsx_rails'
 gem 'caxlsx'
 gem 'caxlsx_rails'
+gem 'simple_form'
