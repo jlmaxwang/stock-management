@@ -5,9 +5,10 @@ class Powder < ApplicationRecord
     header = spreadsheet.row(1)
     (2..spreadsheet.last_row).each do |i|
       row = Hash[[header, spreadsheet.row(i)].transpose]
-      powder = find_by_id(row['id']) || new
+      powder = find_by_name(row['name']) || new
       powder.attributes = row.to_hash
       powder.save!
+      raise
     end
   end
 
