@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2022_03_05_115917) do
     t.decimal "price_retail"
     t.decimal "price_bulk"
     t.integer "qty"
-    t.integer "supplier_id", null: false
+    t.integer "supplier_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "location"

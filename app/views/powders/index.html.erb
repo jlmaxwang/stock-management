@@ -1,6 +1,5 @@
 <% render 'nav' %>
 <h1>药粉</h1>
-
 <div class="container d-flex justify-content-start">
   <%= link_to "新增药品", new_powder_path, :class =>'btn btn-outline-primary'%>
   <% @powders.each do |powder| %>
@@ -10,7 +9,6 @@
           <h5 class="card-title display-6"><%= powder.name%></h5>
           <h6 class="card-subtitle mt-3 mb-3 text-muted">现有库存：<%= powder.qty %></h6>
           <p class="card-text mb-3">库位:<%= powder.location %></p>
-          <p class="card-text mb-3">供应商:<%= powder.supplier.name %></p>
           <a href="<%= edit_powder_path(powder.id) %>" class="card-link mb-3">编辑</a>
         </a>
       </div>
@@ -23,3 +21,8 @@
   link_to 'Download as Excel',
   powders_path(format: :xlsx)
 %>
+<h2>入库上传</h2>
+<%= form_tag import_powders_path , multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "上传入库单" %>
+<% end %>

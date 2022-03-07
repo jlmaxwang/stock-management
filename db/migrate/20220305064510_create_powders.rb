@@ -7,7 +7,7 @@ class CreatePowders < ActiveRecord::Migration[6.1]
       t.decimal :price_retail
       t.decimal :price_bulk
       t.integer :qty
-      t.references :supplier, null: false, foreign_key: true
+      t.references :supplier, null: true, foreign_key: true
 
       t.timestamps
     end

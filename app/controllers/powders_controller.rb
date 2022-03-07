@@ -3,6 +3,7 @@ class PowdersController < ApplicationController
   def index
     @powders = Powder.all
     respond_to do |format|
+      format.xls
       format.xlsx { response.headers['Content-Disposition'] = 'attachment; filename="powders.xlsx"' }
       format.html { render :index }
     end
@@ -42,6 +43,11 @@ class PowdersController < ApplicationController
   def destroy
     @powder.destroy
     redirect_to root_path
+  end
+
+  def import
+    Powder.import(params[:file])
+    redirect_to root_path, notice: '已成功入库'
   end
 
   # def export
