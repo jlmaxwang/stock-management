@@ -1,5 +1,5 @@
 class Powder < ApplicationRecord
-
+  belongs_to :supplier
   def self.import(file)
     spreadsheet = open_spreadsheet(file)
     header = spreadsheet.row(1)
@@ -8,7 +8,6 @@ class Powder < ApplicationRecord
       powder = find_by_name(row['name']) || new
       powder.attributes = row.to_hash
       powder.save!
-      raise
     end
   end
 

@@ -1,0 +1,15 @@
+<h1>新建药粉</h1>
+<% if false %>
+
+<%= simple_form_for(@powder) do |f| %>
+<%= f.input :name, label: '名称'%>
+<%= f.input :pinyin, label: '拼音' %>
+<%= f.input :price_retail, label:'零售价格' %>
+<%= f.input :price_bulk, label: '进货价'%>
+<%= f.input :qty, label:'库存' %>
+<%= f.input :location, label:'库位' %>
+<%= f.submit %>
+<% end %>
+<%= link_to '返回', root_path %>
+<% end %>
+<%= render 'shared/form' %>

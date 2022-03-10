@@ -1,5 +1,6 @@
 class PowdersController < ApplicationController
   before_action :set_powder, only:[:show, :update, :edit, :destroy, :export]
+
   def index
     @powders = Powder.all
     respond_to do |format|
@@ -42,12 +43,12 @@ class PowdersController < ApplicationController
 
   def destroy
     @powder.destroy
-    redirect_to root_path
+    redirect_to root_path, notice: "已删除药品"
   end
 
   def import
     Powder.import(params[:file])
-    redirect_to root_path, notice: '已成功入库'
+    redirect_to root_path, notice: "已成功入库'#{params[:file].original_filename}'"
   end
 
   # def export
