@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  root to: 'powders#index'
-  resources :powders do
-    collection { post :import }
+  devise_for :users
+  root to: 'pages#home' do
+    collection do
+      get :import, :export
+      post :import, :export
+    end
   end
-  resources :suppliers
+    resources :powders
+    resources :suppliers
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

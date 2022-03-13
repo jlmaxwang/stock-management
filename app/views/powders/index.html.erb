@@ -1,4 +1,4 @@
-<%= render 'nav' %>
+<%= render 'shared/nav' %>
 <h1>药粉</h1>
   <p class="alert"><%= alert %></p>
   <%= render 'shared/flashes' %>
@@ -27,8 +27,8 @@
   powders_path(format: :xlsx)
 %>
 
-<%= form_tag import_powders_path , multipart: true do %>
+<%= form_tag import_powders_path, multipart: true do %>
   <%= label_tag :file, '选择入库单' %>
   <%= file_field_tag :file %>
-  <%= submit_tag "上传入库单" %>
+  <%= submit_tag "上传入库单", class:"btn btn-mini btn-success hidden" %>
 <% end %>

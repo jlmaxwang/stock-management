@@ -56,3 +56,8 @@ gem 'caxlsx'
 gem 'caxlsx_rails'
 gem 'simple_form'
 gem 'roo-xls'
+
+# devise
+gem 'devise'
+gem 'autoprefixer-rails', '10.2.5'
+gem 'font-awesome-sass'

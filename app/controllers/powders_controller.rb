@@ -1,5 +1,5 @@
 class PowdersController < ApplicationController
-  before_action :set_powder, only:[:show, :update, :edit, :destroy, :export]
+  before_action :set_powder, only:[:show, :select, :update, :edit, :destroy, :export]
 
   def index
     @powders = Powder.all
@@ -51,15 +51,21 @@ class PowdersController < ApplicationController
     redirect_to root_path, notice: "已成功入库'#{params[:file].original_filename}'"
   end
 
-  # def export
-  #   # 出库
-  #   # 选出要出库的货品
-  #   # 规定好格式，download csv
-  #   respond_to do |format|
-  #     format.html
-  #     format.csv { send_data @powders.to_csv }
-  #   end
-  # end
+  def export
+    # 出库
+    # Powder.export(params[:file])
+    # 选出要出库的货品
+
+    # 规定好格式，download csv
+    # respond_to do |format|
+    #   format.html
+    #   format.csv { send_data @powders.to_csv }
+    # end
+  end
+
+  def select
+
+  end
 
   private
 

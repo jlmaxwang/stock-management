@@ -1,19 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient">
   <div class="container-fluid display-6">
-    <a class="navbar-brand" href="#">宝芝堂</a>
+    <a class="navbar-brand" href="<%= powders_path %>">宝芝堂</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<%= root_path %>">库存清单</a>
+          <a class="nav-link active" aria-current="page" href="<%= powders_path %>">库存清单</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<%= import_powders_path %>">入库</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">出库</a>
+          <a class="nav-link" href="<%= export_powders_path%>">出库</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<%= suppliers_path %>">供应商管理</a>
