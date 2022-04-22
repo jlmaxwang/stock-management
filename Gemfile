@@ -61,3 +61,5 @@ gem 'roo-xls'
 gem 'devise'
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
+# pundit
+gem 'pundit'
